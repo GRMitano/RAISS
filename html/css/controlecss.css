@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+body {
+	font-family: "Agency FB";
+	background-color: #ffffff;
+	font-style: normal;
+	margin: 0px;
+	font-weight: 200;
+	width: 100%;
+	height: 100%;
+}
+header {
+	width: 100%;
+	height: 5%;
+	background-color: #52bad5;
+	display: inline-block;
+}
+.logo {
+	color: #ffffff;
+	font-weight: none;
+	text-align: left;
+	float: left;
+	margin-left: 3%;
+	letter-spacing: 4px;
+	font-family: "Agency FB";
+}
+.logo h3 {
+	display: inline;
+}
+nav {
+	float: right;
+	text-align: right;
+	margin-right: 3%;
+	list-style: none;
+}
+nav ul li {
+	float: left;
+	color: #FFFFFF;
+	text-align: left;
+	letter-spacing: 4px;
+	font-weight: bold;
+	list-style: none;
+	margin-top: 2%;
+}
+ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: "Agency FB";
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+table {
+	float: center;
+	width: 100%;
+	height: 100%;
+	border-spacing: 20px;
+}
+iframe {
+	float: left;
+	width: 99%;
+	height: 100%;
+	border: 0px solid #fff;
+}
+
+.hero_header {
+	text-align: center;
+	margin: 0px;
+	letter-spacing: 2px;
+	font-family: "Agency FB";
+}
+.hero {
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+}
+.gallery {
+	clear: both;
+	display: inline-block;
+	width: 100%;
+	background-color: #fff;
+}
+
+.gallery img {
+	max-height: 90%;
+	max-width: 90%;
+	width: auto;
+	height: auto;
+	padding-top: 2%;
+	padding-bottom: 2%
+}
+.galleryt {
+	clear: both;
+	display: inline-block;
+	width: 100%;
+	background-color: #52bad5;
+	border-bottom:  0px solid #fff;
+	border-top:  4px solid #fff;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+}
+.galleryt .thumbnail h3 {
+	letter-spacing: 4px;
+	color: #ffffff;
+	display: inline;
+}
+.thumbnail {
+	width: 25%;
+	text-align: center;
+	float: left;
+	font-family: "Agency FB";
+}
+footer {
+	width: 100%;
+	height: 5%;
+	background-color: #52bad5;
+	display: inline-block;
+	border-top:  4px solid #fff;
+}
+.link {
+	border: 2px solid #ffffff;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	background-color: #ed7d31;
+}
+.link2 {
+	border: 2px solid #ffffff;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: #ed7d31;
+}
