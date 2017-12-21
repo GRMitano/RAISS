@@ -2,28 +2,31 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-	<meta charset="utf-8">
-	<title>RAISS</title>
-	<link href="../css/controlecss.css" rel="stylesheet" type="text/css">
-  </head>
 
-  <body>
-	<header>
-	  <h3 class="logo">INTERFACE PARA CONTROLE DO BRAÇO ROBÓTICO</h3>
-	  <nav>
-		<ul>
-		  <li><?php echo "LOGADO COMO $logado"; ?></li>
-		  <li>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</li>
-		  <li><a href="registros.php">GERENCIAR USUÁRIOS</a></li>
-		  <li>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</li>
-		  <li><a href="include/logoff.php">SAIR</a></li>
-		</ul>
-	  </nav>
-	</header>
+<head>
+  <meta charset="utf-8">
+  <title>RAISS</title>
+  <link href="../css/controlecss.css" rel="stylesheet" type="text/css">
+</head>
 
-	<section class="hero">
-	  <h2 class="hero_header">
+<body>
+  <header>
+    <h3 class="logo">INTERFACE PARA CONTROLE DO BRAÇO ROBÓTICO</h3>
+    <nav>
+      <ul>
+        <li>
+          <?php echo "LOGADO COMO $logado"; ?>
+        </li>
+        <li>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</li>
+        <li><a href="registros.php">GERENCIAR USUÁRIOS</a></li>
+        <li>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</li>
+        <li><a href="include/logoff.php">SAIR</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2 class="hero_header">
 		<table>
 		  <tr bgcolor="#52bad5">
 			<td width="33%">
@@ -74,32 +77,39 @@
 		  </tr>
 		</table>
 	  </h2>
-	</section>
+  </section>
 
-	<div class="galleryt">
-	  <div class="thumbnail"><h3>GARRA</h3></div>
-	  <div class="thumbnail"><h3>AVANÇO</h3></div>
-	  <div class="thumbnail"><h3>MERGULHO</h3></div>
-	  <div class="thumbnail"><h3>BASE</h3></div>
-	</div>
-	<div class="gallery">
-	  <div class="thumbnail"><img width="280px" height="195px" src="../img/Garra.png"></div>
-	  <div class="thumbnail"><img width="280px" height="195px" src="../img/Avanco.png"></div>
-	  <div class="thumbnail"><img width="280px" height="195px" src="../img/Mergulho.png"></div>
-	  <div class="thumbnail"><img width="280px" height="195px" src="../img/Base.png"></div>
-	</div>
+  <div class="galleryt">
+    <div class="thumbnail">
+      <h3>GARRA</h3></div>
+    <div class="thumbnail">
+      <h3>AVANÇO</h3></div>
+    <div class="thumbnail">
+      <h3>MERGULHO</h3></div>
+    <div class="thumbnail">
+      <h3>BASE</h3></div>
+  </div>
+  <div class="gallery">
+    <div class="thumbnail"><img width="280px" height="195px" src="../img/Garra.png"></div>
+    <div class="thumbnail"><img width="280px" height="195px" src="../img/Avanco.png"></div>
+    <div class="thumbnail"><img width="280px" height="195px" src="../img/Mergulho.png"></div>
+    <div class="thumbnail"><img width="280px" height="195px" src="../img/Base.png"></div>
+  </div>
 
-	<footer>
-	  <h3 class="logo">INTERFACE PPARA CONTROLE DO BRAÇO ROBÓTICO</h3>
-	  <nav>
-		<ul>
-		  <li><?php echo "Logado como $logado"; ?></li>
-		  <li>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</li>
-		  <li><a href="registros.php">GERENCIAR USUÁRIOS</a></li>
-		  <li>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</li>
-		  <li><a href="include/logoff.php">SAIR</a></li>
-		</ul>
-	  </nav>
-	</footer>
-  </body>
+  <footer>
+    <h3 class="logo">INTERFACE PPARA CONTROLE DO BRAÇO ROBÓTICO</h3>
+    <nav>
+      <ul>
+        <li>
+          <?php echo "Logado como $logado"; ?>
+        </li>
+        <li>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</li>
+        <li><a href="registros.php">GERENCIAR USUÁRIOS</a></li>
+        <li>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</li>
+        <li><a href="include/logoff.php">SAIR</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
 </html>
