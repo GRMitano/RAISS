@@ -1,4 +1,6 @@
-﻿	- A .OVA do servidor esta disponivel em:
+Trabalho de Conclusao de Curso SENAI - Redes de Computaroes Vespertino 2016
+
+    - A .OVA do servidor esta disponivel em:
 >>> https://mega.nz/#F!RhwSmJpQ!RwnMtDI7f_E9OR1Q6b0qNQ <<<
 
 Os arquivos dentro de "/PHP/Comandos/" são os arquivos de controle do braço.
