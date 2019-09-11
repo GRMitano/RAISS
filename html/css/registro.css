@@ -69,14 +69,14 @@ h2 {
 	letter-spacing: 2px;
 	font-style: normal;
 }
-.part {
+.parte {
 	padding-bottom: 3%;
 	border-bottom: 2px solid #fff;
 }
-.table1 {
+.tabela1 {
 	text-align: right;
 }
-.table2 {
+.tabela2 {
 	text-align: left;
 }
 table {
@@ -120,8 +120,4 @@ input[type=submit]:active {
 
 input[type=radio] {
 	cursor: pointer;
-}
-input[type=radio]:hover {
-}
-input[type=radio]:checked {
 }

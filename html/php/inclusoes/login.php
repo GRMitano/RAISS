@@ -1,5 +1,5 @@
 <?php 
-include 'MySQL_func.php';
+include 'mysql.php';
 include 'vars.php';
 session_start();
 $link = conecta_mysql($servidor,$usuario,$senhadb,$db);
@@ -30,7 +30,7 @@ if( $tentativas < 5 && $ativo == 1 ){
 				$_SESSION['senha'] = $senha;
 				mysqli_real_query($link, "UPDATE $tabela  SET tentativas = 0 WHERE login = '$login' AND senha = '$senhaSH'");
 				mysqli_close($link);
-				header("location:/PHP/site.php");
+				header("location:/php/site.php");
 			}
 			else{
 				mysqli_real_query($link, "UPDATE $tabela SET tentativas = tentativas + 1 WHERE login = '$login'");

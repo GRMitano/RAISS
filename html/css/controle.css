@@ -89,7 +89,7 @@ iframe {
 	padding-top: 2%;
 	padding-bottom: 2%
 }
-.galleryt {
+.galeria {
 	clear: both;
 	display: inline-block;
 	width: 100%;
@@ -99,7 +99,7 @@ iframe {
 	padding-top: 0.5%;
 	padding-bottom: 0.5%;
 }
-.galleryt .thumbnail h3 {
+.galeria .thumbnail h3 {
 	letter-spacing: 4px;
 	color: #ffffff;
 	display: inline;

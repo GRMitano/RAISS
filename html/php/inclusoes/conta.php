@@ -1,13 +1,13 @@
 <?php  
-include 'verifica_con.php';
-include 'MySQL_func.php';
+include 'check.php';
+include 'mysql.php';
 include 'vars.php';
 $link = conecta_mysql($servidor,$usuario,$senhadb,$db);
 $nivel = procura_mysql($link, 'nivel', $tabela, $logado);
 if($nivel !== 2){
 	mysqli_close($link);
 	echo "Erro usuario não tem permissão para acessar página\n";
-	echo "<meta http-equiv='refresh' content='5;URL=\"/PHP/site.php\"'/>\n";
+	echo "<meta http-equiv='refresh' content='5;URL=\"/php/site.php\"'/>\n";
 	exit(0);
 }
 $login_derr="";

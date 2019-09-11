@@ -1,4 +1,4 @@
-<?php include "include/verifica_con.php"; ?>
+<?php include "inclusoes/check.php"; ?>
 <?php
 error_reporting(E_ALL);
 
@@ -24,7 +24,6 @@ if ($result === false) {
 $in = "G-2\r\n";
 
 socket_write($socket, $in, strlen($in));
-
 
 echo "Closing socket...";
 socket_close($socket);
