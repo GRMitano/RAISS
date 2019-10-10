@@ -1,7 +1,7 @@
 # RAISS
 Trabalho de Conclusao de Curso SENAI - Redes de Computaroes Vespertino 2016
 
-> Você pode obter mais detalhes sobre o projeto, leita o arquivo [Projeto RAISS (TCC 4RV 2016).PDF](https://github.com/riwersxd/RAISS/blob/master/Projeto%20RAISS%20(TCC%204RV%202016).PDF)
+> Você pode obter mais detalhes sobre o projeto, leita o arquivo [Projeto RAISS (TCC 4RV 2016).pdf](https://github.com/riwersxd/RAISS/blob/master/Projeto%20RAISS%20(TCC%204RV%202016).pdf)
 
 ### Requisitos para recriação:
 - Arduino Mega 2560
@@ -34,7 +34,7 @@ Trabalho de Conclusao de Curso SENAI - Redes de Computaroes Vespertino 2016
 Faça as seguintes conexões:  
 ![Modelo Conexões](https://github.com/riwersxd/RAISS/blob/master/modelo.png)
 
-_Veja a Página Página 85 (Figura 44) do [Projeto RAISS (TCC 4RV 2016).PDF](https://github.com/riwersxd/RAISS/blob/master/Projeto%20RAISS%20(TCC%204RV%202016).PDF)_
+_Veja a Página Página 85 (Figura 44) do [Projeto RAISS (TCC 4RV 2016).pdf](https://github.com/riwersxd/RAISS/blob/master/Projeto%20RAISS%20(TCC%204RV%202016).pdf)_
 
 ### Configurando o Ambiente e Execução do Projeto
 Instale o Servidor LAMP e execute-o:
@@ -45,7 +45,7 @@ Execute o Scriptpara gerar o Banco de Dados:
 ```
 /bd_script.sql
 ```
-_Veja as Páginas 86 a 101 (Figuras 45 a 76) do [Projeto RAISS (TCC 4RV 2016).PDF](https://github.com/riwersxd/RAISS/blob/master/Projeto%20RAISS%20(TCC%204RV%202016).PDF)_
+_Veja as Páginas 86 a 101 (Figuras 45 a 76) do [Projeto RAISS (TCC 4RV 2016).pdf](https://github.com/riwersxd/RAISS/blob/master/Projeto%20RAISS%20(TCC%204RV%202016).pdf)_
 
 ---
 **Este projeto foi desenvolvido por:** André Lucas Maegima, Breno Henrique Borges Santos, Bruno dos Santos Mauricio, Guilherme Rios da Cunha(Eu) e Leonardo Ribeiro dos Santos
