@@ -1,18 +1,18 @@
-# RAISS
+# RAISS ![SENAI]()
 Trabalho de Conclusao de Curso SENAI - Redes de Computaroes Vespertino 2016
+![RoboticArm](https://github.com/riwersxd/RAISS/blob/master/robotic-arm.png)
 
 > Você pode obter mais detalhes sobre o projeto, leita o arquivo [Projeto RAISS (TCC 4RV 2016).pdf](https://github.com/riwersxd/RAISS/blob/master/Projeto%20RAISS%20(TCC%204RV%202016).pdf)
 
-### Requisitos para recriação:
+## Requisitos para recriação:
 - Arduino Mega 2560
 - Protoboard 830 Pinos
 - Módulo Wi-Fi ESP8266
 - Braço Robódtico de Acrílico MeArm
 - Máquina com Servidor Linux
 
-### Entendendo a Estrutura
-
-**Arquivos:**
+## Entendendo a Estrutura
+### **Arquivos:**
 - Os arquivos `/modulo.ino` e `/servidor.c` são os programas para o arduíno.
 - Os arquivos em `/php/comandos/` são arquivos de controle do braço.
 - Os arquivos em `/php/inclusoes/` são arquivos de controle do sistema.
@@ -21,7 +21,7 @@ Trabalho de Conclusao de Curso SENAI - Redes de Computaroes Vespertino 2016
 - O arquivo `/index.html` é a página de login do sistema.
 - O arquivo `/script.sql` é o script para gerar o banco com um usuário administrados
 
-**Campos do Banco:**
+### **Campos do Banco:**
 - _ID_: Número de identificação único do usuário.
 - _Login_: Nome utilizado para o acesso do usuário (Deve ser único).
 - _Senha_: Senha utilizada para o acesso do usuário (Criptografado com SHA-2).
@@ -30,13 +30,13 @@ Trabalho de Conclusao de Curso SENAI - Redes de Computaroes Vespertino 2016
 - _Tentativas_: Número de tentativas sem sucesso de acesso usuário (Máximo de 5 tentativas).
 - _Cadastro_: Data de cadastro do usuário.
 
-### Conectando o Arduíno, o Módulo e o Braço
+## Conectando o Arduíno, o Módulo e o Braço
 Faça as seguintes conexões:  
 ![Modelo Conexões](https://github.com/riwersxd/RAISS/blob/master/modelo.png)
 
 _Veja a Página Página 85 (Figura 44) do [Projeto RAISS (TCC 4RV 2016).pdf](https://github.com/riwersxd/RAISS/blob/master/Projeto%20RAISS%20(TCC%204RV%202016).pdf)_
 
-### Configurando o Ambiente e Execução do Projeto
+## Configurando o Ambiente e Execução do Projeto
 Instale o Servidor LAMP e execute-o:
 ```
 apt-get install apache2 php7.0 libapache2-mod-php7.0 mysql-server php7.0-mysql
