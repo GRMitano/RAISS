@@ -1,4 +1,4 @@
-# RAISS ![SENAI]()
+# RAISS
 Trabalho de Conclusao de Curso SENAI - Redes de Computaroes Vespertino 2016
 ![RoboticArm](https://github.com/riwersxd/RAISS/blob/master/robotic-arm.png)
 
