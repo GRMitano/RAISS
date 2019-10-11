@@ -119,5 +119,5 @@ input[type=submit]:active {
 }
 
 input[type=radio] {
-	cursor: pointer;
+  cursor: pointer;
 }

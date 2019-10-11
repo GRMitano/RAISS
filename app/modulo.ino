@@ -1,4 +1,4 @@
-//Biblioteca para utilização e determinação dos servos motores.
+// Biblioteca para utilização e determinação dos servos motores.
 #include <Servo.h> 
 #define DEBUG true
 #define NO_DEBUG false
@@ -9,7 +9,7 @@ bool conectado = false;
 bool erro = false;
 int momento = 0;
 Servo base, avanco, mergulho, garra;
-//Define as variaveis dos valores das posições de cada Eixo, sendo Delay a velocidade do movimento.
+// Define as variaveis dos valores das posições de cada Eixo, sendo Delay a velocidade do movimento.
 float baseP, avancoP,mergulhoP, garraP, Delay;
 
 void pisca(int led, const int timeout);
@@ -60,7 +60,7 @@ void loop() {
         digitalWrite(L_RED, HIGH);
         while(true);
     }
-    //if(conectado && momento > 15) Alive();
+    // if(conectado && momento > 15) Alive();
     resp = recebeMensagem(NO_DEBUG);
     resp = RespostaServidor(resp);
     Serial.print(resp);
@@ -116,8 +116,8 @@ void loop() {
         garra.attach(7);
         garra.write(40);  
     }
-    //Definição do void de movimentação dos servos
 
+    // Definição do void de movimentação dos servos
     void moveServo(Servo *servo, int posicao) {
         int p=servo->read();
         //  Serial.print("Posicao: ");
@@ -135,21 +135,19 @@ void loop() {
             }
         }
     }
+
     // Void para posicionamento sincronizado dos eixos
     void posiciona(Servo *motor1, Servo *motor2, Servo *motor3, float np1, float np2, float np3) {
     float s1,s2,s3;
     float p1=motor1->read();
     float p2=motor2->read();
     float p3=motor3->read();
-    // Em seguida, calculamos a distância, em graus, entre as posições
-    // atuais e as novas.
-    //  variáveis float, para diminuir os
-    // erros de arredondamento.
+    // Em seguida, calculamos a distância, em graus, entre as posições atuais e as novas.
+    // Variáveis float, para diminuir os erros de arredondamento.
     float d1=np1-p1;
     float d2=np2-p2;
     float d3=np3-p3;
-    // pc1 , pc2 e pc3 são as posições correntes, que serão incrementadas 
-    // durante o movimento.
+    // pc1 , pc2 e pc3 são as posições correntes, que serão incrementadas durante o movimento.
     float pc1=p1;
     float pc2=p2;
     float pc3=p3;
@@ -176,9 +174,8 @@ void loop() {
         s2=d2/abs(d3);
         s3=d3/abs(d3);
     }
-    // imprime os valores calculados, para debug, mostrando na tela
-    // os valores calculados
 
+    // Imprime os valores calculados, para debug, mostrando na tela os valores calculados
     Serial.print(np1);
     Serial.print(' ');
     Serial.print(np2);
@@ -230,8 +227,10 @@ void loop() {
     }
     Serial.println("OK");
 }
-//-------------------------------------------------------------------------------------
-//-------------------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------------------//
+//-------------------------------------------------------------------------------------//
+
 void pisca(int led,const int timeout) {
     long int tempo = millis();
     while ( (tempo + timeout) > millis()) {
@@ -272,8 +271,8 @@ String sendData(String command, const int timeout, boolean debug) {
     long int time = millis();
     while ( (time + timeout) > millis()) {
         while (Serial2.available()){
-            // The esp has data so display its output to the serial window
-            char c = Serial2.read(); // read the next character.
+            // O esp possui dados para exibir sua saída na janela serial
+            char c = Serial2.read(); // Le o proximo caracter.
             response += c;
         }
     }
@@ -372,10 +371,8 @@ void Desconecta(boolean *conn) {
         *conn = false;
     }
 }
-
     /*----------------------------------------------------------------------*/
    /*----------------------------------------------------------------------*/
   /*----------------------------------fim---------------------------------*/
  /*----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------*/
-

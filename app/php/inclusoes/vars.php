@@ -5,7 +5,7 @@ function test_input($input){
   return $input;
 }
 
-//POSTs
+// POSTs
 $login = test_input($_POST['login']);
 $login_a = test_input($_POST['login_a']);
 $login_d = test_input($_POST['login_d']);
@@ -15,10 +15,10 @@ $senhaSH = hash('sha256',$senha);
 $ativa = $_POST['ativa'];
 $lv = $_POST['nivel'];
 
-//self php
+// Self PHP
 $self=$_SERVER["PHP_SELF"];
 
-//banco de dados
+// Banco de Dados
 $servidor="localhost";
 $usuario="usuario_raiss";
 $senhadb="projeto";

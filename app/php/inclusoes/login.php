@@ -6,7 +6,7 @@ $link = conecta_mysql($servidor,$usuario,$senhadb,$db);
 $tentativas = procura_mysql($link,'tentativas',$tabela,$login);
 $ativo = procura_mysql($link,'ativo',$tabela,$login);
 if( $tentativas === NULL || $ativo === NULL ){
-	mysqli_close($link);
+  mysqli_close($link);
 	header("location:/");
 }
 if( $tentativas >= 5 ){
