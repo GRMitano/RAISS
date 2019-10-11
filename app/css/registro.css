@@ -1,123 +1,122 @@
 @charset "UTF-8";
 
 body {
-	font-family: "Agency FB";
-	background-color: #ffffff;
-	font-style: normal;
-	margin: 0px;
-	font-weight: 200;
-	width: 100%;
-	height: 100%;
-	color: #fff;
+font-family: "Agency FB";
+background-color: #ffffff;
+font-style: normal;
+margin: 0px;
+font-weight: 200;
+width: 100%;
+height: 100%;
+color: #fff;
 }
 .caixa {
-	background-color: #52bad5;
-	width: 60%;
-	margin: 0 20% 0 20%;
-	text-align: center;
+background-color: #52bad5;
+width: 60%;
+margin: 0 20% 0 20%;
+text-align: center;
 }
 .logo {
-	color: #ffffff;
-	font-weight: none;
-	text-align: left;
-	float: left;
-	margin-left: 3%;
-	letter-spacing: 5px;
-	font-family: "Agency FB";
-	display: inline;
+color: #ffffff;
+font-weight: none;
+text-align: left;
+float: left;
+margin-left: 3%;
+letter-spacing: 5px;
+font-family: "Agency FB";
+display: inline;
 }
 header {
-	height:auto;
-	width: 100%;
-	background-color: #52bad5;
-	display: inline-block;
-	color: #fff;
-	border-bottom: 4px solid #fff;
+height:auto;
+width: 100%;
+background-color: #52bad5;
+display: inline-block;
+color: #fff;
+border-bottom: 4px solid #fff;
 }
 nav {
-	float: right;
-	text-align: right;
-	margin-right: 3%;
-	list-style: none;
+float: right;
+text-align: right;
+margin-right: 3%;
+list-style: none;
 }
 nav ul li {
-	float: left;
-	color: #FFFFFF;
-	text-align: left;
-	letter-spacing: 4px;
-	font-weight: bold;
-	list-style: none;
-	margin-top: 2%;
+float: left;
+color: #FFFFFF;
+text-align: left;
+letter-spacing: 4px;
+font-weight: bold;
+list-style: none;
+margin-top: 2%;
 }
 ul li a {
-	color: #FFFFFF;
-	text-decoration: none;
-	font-family: "Agency FB";
+color: #FFFFFF;
+text-decoration: none;
+font-family: "Agency FB";
 }
 .logo h3 {
-	display: inline;
+display: inline;
 }
 footer {
-	width: 100%;
-	height: 5%;
-	background-color: #52bad5;
-	display: inline-block;
-	border-top:  2px solid #fff;
-	border-left: 3%;
+width: 100%;
+height: 5%;
+background-color: #52bad5;
+display: inline-block;
+border-top:  2px solid #fff;
+border-left: 3%;
 }
 h2 {
-	letter-spacing: 2px;
-	font-style: normal;
+letter-spacing: 2px;
+font-style: normal;
 }
 .parte {
-	padding-bottom: 3%;
-	border-bottom: 2px solid #fff;
+padding-bottom: 3%;
+border-bottom: 2px solid #fff;
 }
 .tabela1 {
-	text-align: right;
+text-align: right;
 }
 .tabela2 {
-	text-align: left;
+text-align: left;
 }
 table {
-	margin: 0px auto 0px auto;
+margin: 0px auto 0px auto;
 }
 input[type=text] {
-	border: 1px solid #fff;
+border: 1px solid #fff;
 }
 input[type=text]:hover {
-	border: 1px solid #ed7d31;
+border: 1px solid #ed7d31;
 }
 input[type=text]:focus {
-	border: 1px solid #ed7d31;
+border: 1px solid #ed7d31;
 }
 input[type=password] {
-	border: 1px solid #fff;
+border: 1px solid #fff;
 }
 input[type=password]:hover {
-	border: 1px solid #ed7d31;
+border: 1px solid #ed7d31;
 }
 input[type=password]:focus {
-	border: 1px solid #ed7d31;
+border: 1px solid #ed7d31;
 }
 input[type=submit] {
-	background-color: #ed7d31;
-	border: 1px solid #fff;
-	color: #fff;
+background-color: #ed7d31;
+border: 1px solid #fff;
+color: #fff;
 }
 input[type=submit]:hover {
-	background-color: #fff;
-	border: 1px solid #ed7d31;
-	color: #ed7d31;
-	cursor: pointer;
+background-color: #fff;
+border: 1px solid #ed7d31;
+color: #ed7d31;
+cursor: pointer;
 }
 input[type=submit]:active {
-	background-color: #fff;
-	border: 1px inset #ed7d31;
-	color: #ed7d31;
-	cursor: pointer;
+background-color: #fff;
+border: 1px inset #ed7d31;
+color: #ed7d31;
+cursor: pointer;
 }
-
 input[type=radio] {
   cursor: pointer;
 }

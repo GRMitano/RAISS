@@ -29,4 +29,6 @@ echo "Closing socket...";
 socket_close($socket);
 echo "OK.\n\n";
 ?>
-<script>window.close();</script>
+<script>
+  window.close();
+</script>

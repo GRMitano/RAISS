@@ -1,142 +1,141 @@
 @charset "UTF-8";
 
 body {
-	font-family: "Agency FB";
-	background-color: #ffffff;
-	font-style: normal;
-	margin: 0px;
-	width: 100%;
-	height: 100%;
+font-family: "Agency FB";
+background-color: #ffffff;
+font-style: normal;
+margin: 0px;
+width: 100%;
+height: 100%;
 }
 header {
-	width: 100%;
-	height: 5%;
-	background-color: #52bad5;
-	display: inline-block;
+width: 100%;
+height: 5%;
+background-color: #52bad5;
+display: inline-block;
 }
 .logo {
-	color: #ffffff;
-	font-weight: none;
-	text-align: left;
-	float: left;
-	margin-left: 3%;
-	letter-spacing: 5px;
-	font-family: "Agency FB";
-	display: inline;
+color: #ffffff;
+font-weight: none;
+text-align: left;
+float: left;
+margin-left: 3%;
+letter-spacing: 5px;
+font-family: "Agency FB";
+display: inline;
 }
 .logo h3 {
-	display: inline;
+display: inline;
 }
 nav {
-	float: right;
-	text-align: right;
-	margin-right: 3%;
-	list-style: none;
+float: right;
+text-align: right;
+margin-right: 3%;
+list-style: none;
 }
 nav ul li {
-	float: left;
-	color: #FFFFFF;
-	text-align: left;
-	letter-spacing: 4px;
-	font-weight: bold;
-	list-style: none;
-	margin-top: 0.5%;
+float: left;
+color: #FFFFFF;
+text-align: left;
+letter-spacing: 4px;
+font-weight: bold;
+list-style: none;
+margin-top: 0.5%;
 }
 input {
-	border: 1px solid #fff;
+border: 1px solid #fff;
 }
 .hero img {
-	width: 100%;
-	height: 100%;
+width: 100%;
+height: 100%;
 }
 .galeria {
-	width: 100%;
-	background-color: #52bad5;
+width: 100%;
+background-color: #52bad5;
 }
 .galeria h3 {
-	letter-spacing: 4px;
-	color: #ffffff;
-	margin-top: auto;
-	margin-bottom: auto;
-	padding-top:  0.5%;
-	padding-bottom: 0.5%;
-	text-align: center;
+letter-spacing: 4px;
+color: #ffffff;
+margin-top: auto;
+margin-bottom: auto;
+padding-top:  0.5%;
+padding-bottom: 0.5%;
+text-align: center;
 }
 .gallery {
-	width: 100%;
-	background-color: #FFFFFF;
-	display: block;
+width: 100%;
+background-color: #FFFFFF;
+display: block;
 }
 .thumbnail {
-	width: 30%;
-	text-align: justify;
-	float: left;
-	margin-left: 4px;
-	margin-top: 4px;
+width: 30%;
+text-align: justify;
+float: left;
+margin-left: 4px;
+margin-top: 4px;
 }
 .thumbnail img {
-	width: auto;
-	height: auto;
-	max-height: 100%;
-	max-width: 100%;
+width: auto;
+height: auto;
+max-height: 100%;
+max-width: 100%;
 }
 .thumbnail2 {
-	width: 67%;
-	text-align: justify;
-	float: left;
-	line-height: 130%;
-	padding-left: 1%;
-	padding-right: 1%;
-	color: #777777;
-	font-size: 110%;
-	letter-spacing: 1px;
-	margin-top: 4px;
-	margin-bottom: 4px;
+width: 67%;
+text-align: justify;
+float: left;
+line-height: 130%;
+padding-left: 1%;
+padding-right: 1%;
+color: #777777;
+font-size: 110%;
+letter-spacing: 1px;
+margin-top: 4px;
+margin-bottom: 4px;
 }
 footer {
-	margin: auto;
-	width: 100%;
-	height: 60px;
-	background-color: #52bad5;
-	display: inline-block;
+margin: auto;
+width: 100%;
+height: 60px;
+background-color: #52bad5;
+display: inline-block;
 }
 footer div {
-	float: right;
-	padding-right: 3%;
+float: right;
+padding-right: 3%;
 }
-
 input[type=text] {
-	border: 1px solid #fff;
+border: 1px solid #fff;
 }
 input[type=text]:hover {
-	border: 1px solid #ed7d31;
+border: 1px solid #ed7d31;
 }
 input[type=text]:focus {
-	border: 1px solid #ed7d31;
+border: 1px solid #ed7d31;
 }
 input[type=password] {
-	border: 1px solid #fff;
+border: 1px solid #fff;
 }
 input[type=password]:hover {
-	border: 1px solid #ed7d31;
+border: 1px solid #ed7d31;
 }
 input[type=password]:focus {
-	border: 1px solid #ed7d31;
+border: 1px solid #ed7d31;
 }
 input[type=submit] {
-	background-color: #ed7d31;
-	border: 1px solid #fff;
-	color: #fff;
+background-color: #ed7d31;
+border: 1px solid #fff;
+color: #fff;
 }
 input[type=submit]:hover {
-	background-color: #fff;
-	border: 1px solid #ed7d31;
-	color: #ed7d31;
-	cursor: pointer;
+background-color: #fff;
+border: 1px solid #ed7d31;
+color: #ed7d31;
+cursor: pointer;
 }
 input[type=submit]:active {
-	background-color: #fff;
-	border: 1px inset #ed7d31;
-	color: #ed7d31;
-  cursor: pointer;
+background-color: #fff;
+border: 1px inset #ed7d31;
+color: #ed7d31;
+ cursor: pointer;
 }
