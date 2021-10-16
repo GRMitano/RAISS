@@ -43,12 +43,12 @@ void insereNoFinal(TipoListaCircular *lista, TipoItem novoItem) {
   TipoItem *novoNo;
   novoNo = malloc(sizeof(TipoItem));
   *novoNo = novoItem;
-  if(lista->ultimo == NULL) {  //lista vazia 
-    novoNo->prox = novoNo; //novo nó será único nó
+  if(lista->ultimo == NULL) {
+    novoNo->prox = novoNo;
     lista->ultimo = novoNo;
   }
   else {
-    novoNo->prox = lista->ultimo->prox; //aponta para o início
+    novoNo->prox = lista->ultimo->prox;
     lista->ultimo->prox = novoNo;
     lista->ultimo=novoNo;
   }
@@ -62,8 +62,8 @@ int removerListaCircular (TipoListaCircular *lista, int chave) {
   if(lista->tamanho == 0)return -1;
   if(p1 != NULL) {
     do {
-      p1=p1->prox;///1 2 3
-      p2=p2->prox;///2 3 1
+      p1=p1->prox;
+      p2=p2->prox;
       if(p2->valor == chave) {
         if(lista->tamanho == 1) {
           lista->ultimo = NULL;
@@ -87,7 +87,7 @@ int removerListaCircular (TipoListaCircular *lista, int chave) {
 
 void imprimeLista(TipoListaCircular *lista) {
   TipoItem *p =lista->ultimo;
-  if(p != NULL) { //se lista não for vazia
+  if(p != NULL) {
     do {
       p=p->prox;
       printf("%d ",p->valor);
