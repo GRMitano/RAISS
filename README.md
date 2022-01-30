@@ -1,6 +1,6 @@
 # RAISS
 Trabalho de Conclusao de Curso SENAI - Redes de Computaroes Vespertino 2016.  
-![RoboticArm](https://github.com/riwersxd/RAISS/blob/master/robotic-arm.png)
+![RoboticArm](https://github.com/riwersxd/RAISS/blob/master/app/img/braco.png)
 
 > Você pode obter mais detalhes sobre o projeto, leita o arquivo [Projeto RAISS (TCC 4RV 2016).pdf](https://github.com/riwersxd/RAISS/blob/master/Projeto%20RAISS%20(TCC%204RV%202016).pdf)
 
@@ -32,7 +32,7 @@ Trabalho de Conclusao de Curso SENAI - Redes de Computaroes Vespertino 2016.
 
 ## Conectando o Arduíno, o Módulo e o Braço
 Faça as seguintes conexões:  
-![Modelo Conexões](https://github.com/riwersxd/RAISS/blob/master/modelo.png)
+![Esquema Conexões](https://github.com/riwersxd/RAISS/blob/master/app/esquema.png)
 
 _Veja a Página Página 85 (Figura 44) do [Projeto RAISS (TCC 4RV 2016).pdf](https://github.com/riwersxd/RAISS/blob/master/Projeto%20RAISS%20(TCC%204RV%202016).pdf)_
 
