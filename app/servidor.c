@@ -1,5 +1,6 @@
 // A simple server in the internet domain using TCP
-// The port number is passed as an argument //
+// The port number is passed as an argument
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,6 +11,7 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 #define MAX 2
+
 typedef struct TipoItem {
   int valor;
   struct TipoItem *prox;
