@@ -43,7 +43,7 @@ apt-get install apache2 php7.0 libapache2-mod-php7.0 mysql-server php7.0-mysql
 ```
 Execute o Scriptpara gerar o Banco de Dados:
 ```
-/bd_script.sql
+/script.sql
 ```
 _Veja as Páginas 86 a 101 (Figuras 45 a 76) do [Projeto RAISS (TCC 4RV 2016).pdf](https://github.com/riwersxd/RAISS/blob/master/Projeto%20RAISS%20(TCC%204RV%202016).pdf)_
 
