@@ -1,140 +1,104 @@
-@charset "UTF-8";
-
 body {
-  font-family: "Agency FB";
-  background-color: #ffffff;
-  font-style: normal;
+  font-family: "Arial, Helvetica", sans-serif;
   margin: 0px;
-  width: 100%;
-  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-header {
-  width: 100%;
-  height: 5%;
+
+.header {
+  height: 48px;
   background-color: #52bad5;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px
 }
-.logo {
-  color: #ffffff;
-  font-weight: none;
-  text-align: left;
-  margin-left: 3%;
-  letter-spacing: 5px;
-  font-family: "Agency FB";
-  display: inline;
-}
-.logo h3 {
-  display: inline;
-}
-nav {
-  float: right;
-  text-align: right;
-  margin-right: 3%;
-  list-style: none;
-}
-nav ul li {
-  float: left;
-  color: #FFFFFF;
-  text-align: left;
+
+.header .logo {
+  color: #fff;
   letter-spacing: 4px;
-  font-weight: bold;
-  list-style: none;
-  margin-top: 0.5%;
 }
-input {
+
+.form {
+  margin-block-end: 0
+}
+
+.form label {
+  font-size: 14px;
+  color: #fff;
+}
+
+.form input {
   border: 1px solid #fff;
 }
-.hero img {
-  width: 100%;
-  height: 100%;
+
+.form input:first-of-type {
+  margin-right: 12px;
 }
-.galeria {
-  width: 100%;
-  background-color: #52bad5;
-}
-.galeria h3 {
-  letter-spacing: 4px;
-  color: #ffffff;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-top:  0.5%;
-  padding-bottom: 0.5%;
-  text-align: center;
-}
-.gallery {
-  width: 100%;
-  background-color: #FFFFFF;
-  display: block;
-}
-.thumbnail {
-  width: 30%;
-  text-align: justify;
-  float: left;
-  margin-left: 4px;
-  margin-top: 4px;
-}
-.thumbnail img {
-  width: auto;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-}
-.thumbnail2 {
-  width: 67%;
-  text-align: justify;
-  float: left;
-  line-height: 130%;
-  padding-left: 1%;
-  padding-right: 1%;
-  color: #777777;
-  font-size: 110%;
-  letter-spacing: 1px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-footer {
-  margin: auto;
-  width: 100%;
-  height: 60px;
-  background-color: #52bad5;
-  display: inline-block;
-}
-footer div {
-  float: right;
-  padding-right: 3%;
-}
-input[type=text] {
-  border: 1px solid #fff;
-}
-input[type=text]:hover {
+
+.form input:hover, .form input:focus {
   border: 1px solid #ed7d31;
+  outline: none
 }
-input[type=text]:focus {
-  border: 1px solid #ed7d31;
-}
-input[type=password] {
-  border: 1px solid #fff;
-}
-input[type=password]:hover {
-  border: 1px solid #ed7d31;
-}
-input[type=password]:focus {
-  border: 1px solid #ed7d31;
-}
-input[type=submit] {
+
+.form button {
   background-color: #ed7d31;
   border: 1px solid #fff;
   color: #fff;
 }
-input[type=submit]:hover {
+.form button:hover, .form button:active {
   background-color: #fff;
   border: 1px solid #ed7d31;
   color: #ed7d31;
   cursor: pointer;
 }
-input[type=submit]:active {
-  background-color: #fff;
-  border: 1px inset #ed7d31;
-  color: #ed7d31;
-  cursor: pointer;
+
+.cover {
+  width: 100%;
+}
+
+.about {
+  flex: 1;
+}
+
+.title {
+  height: 40px;
+  background-color: #52bad5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+.article {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+
+.picture {
+  width: 400px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.text p {
+  margin-top: 0;
+  text-align: justify;
+  color: #777777;
+  line-height: 24px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #52bad5;
+  height: 40px;
+  padding: 0 24px;
+  color: #fff;
+  letter-spacing: 2px;
 }

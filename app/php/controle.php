@@ -1,207 +1,90 @@
 <?php include "inclusoes/check.php"; ?>
+
 <!DOCTYPE html>
+
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>RAISS</title>
+    <link href="../css/controle.css" rel="stylesheet">
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>RAISS</title>
-  <link href="../css/controle.css" rel="stylesheet" type="text/css">
-</head>
+  <body>
+    <header class="header">
+      <h3 class="logo">INTERFACE DE CONTROLE</h3>
+      <nav class="navbar">
+        <?php echo "Logado como $logado"; ?>
+        <a href="registros.php">GERENCIAR USUÁRIOS</a>
+        &bull;
+        <a href="inclusoes/logoff.php">SAIR</a>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <h3 class="logo">INTERFACE PARA CONTROLE DO BRAÇO ROBÓTICO</h3>
-    <nav>
-      <ul>
-        <li>
-          <?php echo "LOGADO COMO $logado"; ?>
-        </li>
-        <li>
-          <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        </li>
-        <li>
-          <a href="registros.php">GERENCIAR USUÁRIOS</a>
-        </li>
-        <li>
-          <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        </li>
-        <li>
-          <a href="inclusoes/logoff.php">SAIR</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <section class="container">
+      <div class="control">
+        <span class="column">
+          <a class="link" href="comandos/reseta.php" target="_blank">RESET</a>
+          <a class="link" href="comandos/garra-1.php" target="_blank">Garra Aberta</a>
+          <a class="link" href="comandos/garra-2.php" target="_blank">Semi Aberta</a>
+          <a class="link" href="comandos/garra-3.php" target="_blank">Garra Fechada</a>
+        </span>
+        <span class="column">
+          <a class="link" href="comandos/avanco-1.php" target="_blank">Avanço 50º</a>
+          <a class="link" href="comandos/avanco-2.php" target="_blank">Avanço 100º</a>
+          <a class="link" href="comandos/avanco-3.php" target="_blank">Avanço 150º</a>
+          <a class="link" href="comandos/avanco-4.php" target="_blank">Avanço 200º</a>
+        </span>
+      </div>
 
-  <section class="hero">
-    <h2 class="hero_header">
-      <table>
-        <tr bgcolor="#52bad5">
-          <td width="33%">
-            <table>
-              <tr>
-                <td width="50%">
-                  <a href="comandos/reseta.php" target="_blank">
-                    <div class="link">RESET</div>
-                  </a>
-                </td>
-                <td width="50%">
-                  <a href="comandos/avanco-1.php" target="_blank">
-                    <div class="link">Avanço 50º</div>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="comandos/garra-1.php" target="_blank">
-                    <div class="link">Garra Aberta</div>
-                  </a>
-                </td>
-                <td>
-                  <a href="comandos/avanco-2.php" target="_blank">
-                    <div class="link">Avanço 100º</div>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="comandos/garra-2.php" target="_blank">
-                    <div class="link">Semi Aberta</div>
-                  </a>
-                </td>
-                <td>
-                  <a href="comandos/avanco-3.php" target="_blank">
-                    <div class="link">Avanço 150º</div>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="comandos/garra-3.php" target="_blank">
-                    <div class="link">Garra Fechada</div>
-                  </a>
-                </td>
-                <td>
-                  <a href="comandos/avanco-4.php" target="_blank">
-                    <div class="link">Avanço 200º</div>
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </td>
-          <td width="28.5%">
-            <iframe src="http://192.168.0.100:8080/browserfs.html"></iframe>
-          </td>
-          <td width="33%">
-            <table>
-              <tr>
-                <td width="50%">
-                  <a href="comandos/mergulho-1.php" target="_blank">
-                    <div class="link2">Mergulho 0º</div>
-                  </a>
-                </td>
-                <td width="50%">
-                  <a href="comandos/base-1.php" target="_blank">
-                    <div class="link2">Base 0º</div>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="comandos/mergulho-2.php" target="_blank">
-                    <div class="link2">Mergulho 25º</div>
-                  </a>
-                </td>
-                <td>
-                  <a href="comandos/base-2.php" target="_blank">
-                    <div class="link2">Base 45º</div>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="comandos/mergulho-3.php" target="_blank">
-                    <div class="link2">Mergulho 50º</div>
-                  </a>
-                </td>
-                <td>
-                  <a href="comandos/base-3.php" target="_blank">
-                    <div class="link2">Base 90º</div>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="comandos/mergulho-4.php" target="_blank">
-                    <div class="link2">Mergulho 75ª</div>
-                  </a>
-                </td>
-                <td>
-                  <a href="comandos/base-4.php" target="_blank">
-                    <div class="link2">Base 135º</div>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="comandos/mergulho-5.php" target="_blank">
-                    <div class="link2">Mergulho 100º</div>
-                  </a>
-                </td>
-                <td>
-                  <a href="comandos/base-5.php" target="_blank">
-                    <div class="link2">Base 180º</div>
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </h2>
-  </section>
-  <div class="galeria">
-    <div class="thumbnail">
-      <h3>GARRA</h3>
+      <iframe id="iframe" class="iframe" src="http://192.168.15.3:8080/jsfs.html"></iframe>
+
+      <div class="control">
+        <span class="column">
+          <a class="link" href="comandos/mergulho-1.php" target="_blank">Mergulho 0º</a>
+          <a class="link" href="comandos/mergulho-2.php" target="_blank">Mergulho 25º</a>
+          <a class="link" href="comandos/mergulho-3.php" target="_blank">Mergulho 50º</a>
+          <a class="link" href="comandos/mergulho-4.php" target="_blank">Mergulho 75ª</a>
+          <a class="link" href="comandos/mergulho-5.php" target="_blank">Mergulho 100º</a>
+        </span>
+        <span class="column">
+          <a class="link" href="comandos/base-1.php" target="_blank">Base 0º</a>
+          <a class="link" href="comandos/base-2.php" target="_blank">Base 45º</a>
+          <a class="link" href="comandos/base-3.php" target="_blank">Base 90º</a>
+          <a class="link" href="comandos/base-4.php" target="_blank">Base 135º</a>
+          <a class="link" href="comandos/base-5.php" target="_blank">Base 180º</a>
+        </span>
+      </div>
+    </section>
+
+    <div class="reference">
+      <span>
+        <h3>GARRA</h3>
+        <img src="../img/garra.png">
+      </span>
+      <span>
+        <h3>AVANÇO</h3>
+        <img src="../img/avanco.png">
+      </span>
+      <span>
+        <h3>MERGULHO</h3>
+        <img src="../img/mergulho.png">
+      </span>
+      <span>
+        <h3>BASE</h3>
+        <img src="../img/base.png">
+      </span>
     </div>
-    <div class="thumbnail">
-      <h3>AVANÇO</h3>
-    </div>
-    <div class="thumbnail">
-      <h3>MERGULHO</h3>
-    </div>
-    <div class="thumbnail">
-      <h3>BASE</h3>
-    </div>
-  </div>
-  <div class="gallery">
-    <div class="thumbnail"><img width="280px" height="195px" src="../img/garra.png"></div>
-    <div class="thumbnail"><img width="280px" height="195px" src="../img/avanco.png"></div>
-    <div class="thumbnail"><img width="280px" height="195px" src="../img/mergulho.png"></div>
-    <div class="thumbnail"><img width="280px" height="195px" src="../img/base.png"></div>
-  </div>
 
-  <footer>
-    <h3 class="logo">INTERFACE PPARA CONTROLE DO BRAÇO ROBÓTICO</h3>
-    <nav>
-      <ul>
-        <li>
-          <?php echo "Logado como $logado"; ?>
-        </li>
-        <li>
-          <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        </li>
-        <li>
-          <a href="registros.php">GERENCIAR USUÁRIOS</a>
-        </li>
-        <li>
-          <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        </li>
-        <li>
-          <a href="inclusoes/logoff.php">SAIR</a>
-        </li>
-      </ul>
-    </nav>
-  </footer>
-</body>
-
+    <footer class="footer">
+      <span>&copy;2016 - RAISS</span>
+      <nav class="navbar">
+        <?php echo "Logado como $logado"; ?>
+        <a href="registros.php">GERENCIAR USUÁRIOS</a>
+        &bull;
+        <a href="inclusoes/logoff.php">SAIR</a>
+      </nav>
+    </footer>
+  </body>
 </html>

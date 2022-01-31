@@ -1,143 +1,109 @@
 <?php include 'inclusoes/conta.php'; ?>
 
 <!DOCTYPE html>
+
 <html>
-
-<head>
-  <title>RAISS</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link href="../css/registro.css" rel="stylesheet" type="text/css">
-</head>
-
-<div class="caixa">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>RAISS</title>
+    <link href="../css/registro.css" rel="stylesheet">
+  </head>
 
   <body>
-    <header>
-      <h3 class="logo">CONTROLE DE USUARIOS</h3>
-      <nav>
-        <ul>
-          <li>
+    <div class="container">
+      <header class="header">
+        <h3 class="logo">CONTROLE DE USUARIOS</h3>
+        <nav class="navbar">
+          <span>
             <?php echo "Logado como $logado"; ?>
-          </li>
-          <li>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</li>
-          <li>
-            <a href="controle.php">VOLTAR</a>
-          </li>
-          <li>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</li>
-          <li>
-            <a href="inclusoes/logoff.php">SAIR</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+          </span>
+          <br>
+          <a href="controle.php">VOLTAR</a>
+          &bull;
+          <a href="inclusoes/logoff.php">SAIR</a>
+        </nav>
+      </header>
 
-    <div class="parte">
-      <h2>Usuarios Registrados</h2>
-      <?php TabelaUsuarios($link, $tabela); ?>
-    </div>
-    <div class="parte">
-      <h2>Adiciona Usuario</h2>
-      <form action="<?php echo $self; ?>" method="post">
-        <table>
-          <tr>
-            <td class="tabela1">Login:&nbsp;</td>
-            <td class="tabela2"><input type="text" name="login_a"><?php echo $login_err; ?></td>
-          </tr>
-          <tr>
-            <td class="tabela1">Senha:&nbsp;</td>
-            <td class="tabela2"><input type="password" name="senha"><?php echo $senha_err; ?></td>
-            <td><input type="submit" value="Adicionar"></td>
-          </tr>
-          <tr>
-            <td class="tabela1">Confirmação da Senha:&nbsp;</td>
-            <td class="tabela2"><input type="password" name="confirm"><?php echo $confirm_err; ?></td>
-          </tr>
-        </table>
-      </form>
-    </div>
-    <div class="parte">
-      <h2>Remover usuario</h2>
-      <form action="<?php echo $self; ?>" method="post">
-        <table>
-          <tr>
-            <td>Usuario a Ser Removido:&nbsp;</td>
-            <td><input class="navy-tema" type="text" name="login_d"><?php echo $login_derr; ?></td>
-            <td><input type="submit" value="Remover"></td>
-          </tr>
-        </table>
-      </form>
-    </div>
-    <div class="parte">
-      <h2>Configurações de Usuarios</h2>
-      <form action="<?php echo $self; ?>" method="post">
-        <table>
-          <tr>
-            <td class="tabela1">Informe o Login do Usuario:&nbsp;</td>
-            <td class="tabela2"><input type="text" name="login"></td>
-            <td><input type="submit" value="Alterar"></td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>
-              <table class="tabela1">
-                <tr>
-                  <td>Tipo de Usuario:&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>Ação:&nbsp;</td>
-                </tr>
-              </table>
-            </td>
-            <td>
-              <table class="tabela2">
-                <tr>
-                  <td>
-                    <input type="radio" name="nivel" value="1" checked>
-                    <span>Usuario Comum &nbsp;</span>
-                  </td>
-                  <td>
-                    <input type="radio" name="nivel" value="2">
-                    <span>Usuario Admnistrador</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="radio" name="ativa" value="1" checked>
-                    <span>Ativar</span>
-                  </td>
-                  <td>
-                    <input type="radio" name="ativa" value="0">
-                    <span>Desativar</span>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-      </form>
-    </div>
+      <section class="section">
+        <h3 class="title">USUÁRIOS REGISTRADOS</h3>
+        <?php TabelaUsuarios($link, $tabela); ?>
+      </section>
 
-    <footer>
-      <h3 class="logo">CONTROLE DE USUARIOS</h3>
-      <nav>
-        <ul>
-          <li>
+      <section class="section">
+        <h3 class="title">ADICIONAR URUÁRIO</h3>
+        <form class="form" action="<?php echo $self; ?>" method="post">
+          <div class="add-row">
+            <label>Login:</label>
+            <input type="text" name="login_a"><?php echo $login_err; ?>
+          </div>
+          <div class="add-row">
+            <label >Senha:</label>
+            <input type="password" name="senha"><?php echo $senha_err; ?>
+          </div>
+          <div class="add-row">
+            <label>Confirmação:</label>
+            <input type="password" name="confirm"><?php echo $confirm_err; ?>
+          </div>
+          <button type="submit">Adicionar</button>
+        </form>
+      </section>
+
+      <section class="section">
+        <h3 class="title">REMOVER USUÁRIOS</h3>
+        <form class="form" action="<?php echo $self; ?>" method="post">
+          <div class="remove-row">
+            <label>Login do Usuario:</label>
+            <input ype="text" name="login_d"><?php echo $login_derr; ?>
+          </div>
+          <button type="submit">Remover</button>
+        </form>
+      </section>
+
+      <section class="section">
+        <h3 class="title">CONFIGURAÇOES DE USUÁRIO</h3>
+        <form class="form" action="<?php echo $self; ?>" method="post">
+          <label for="edit">Login do Usuario:</label>
+          <input id="edit" type="text" name="login">
+          <div class="edit-row">
+            <label>Tipo de Usuario:</label>
+            <span>
+              <input id="comum" type="radio" name="nivel" value="1" checked>
+              <label for="comum">Usuario Comum</label>
+            </span>
+            <span>
+              <input id="adm" type="radio" name="nivel" value="2">
+              <label for="adm">Admnistrador</label>
+            </span>
+          </div>
+          <div class="edit-row">
+            <label>Status:</label>
+            <span>
+              <input id="ativo" type="radio" name="ativa" value="1" checked>
+              <label for="ativo">Ativo</label>
+            </span>
+            <span>
+              <input id="inativo" type="radio" name="ativa" value="0">
+              <label for="inativo">Inativo</label>
+            </span>
+          </div>
+          <button type="submit">Alterar</button>
+        </form>
+      </section>
+
+      <footer class="header">
+        <span>&copy;2016 - RAISS</span>
+        <nav class="navbar">
+          <span>
             <?php echo "Logado como $logado"; ?>
-          </li>
-          <li>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</li>
-          <li>
-            <a href="controle.php">VOLTAR</a>
-          </li>
-          <li>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</li>
-          <li>
-            <a href="inclusoes/logoff.php">SAIR</a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
+          </span>
+          <br>
+          <a href="controle.php">VOLTAR</a>
+          &bull;
+          <a href="inclusoes/logoff.php">SAIR</a>
+        </nav>
+      </footer>
+    </div>
   </body>
-  
-</div>
-
 </html>
